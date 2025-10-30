@@ -67,4 +67,27 @@ or
 ```bash
 node server.js
 ```
-### 
+---
+
+## API Endpoints
+
+| HTTP Method | Endpoint         | Description                                      | Request Body (Example)                       | Response                                      |
+| ----------- | ---------------- | ------------------------------------------------ | -------------------------------------------- | --------------------------------------------- |
+| **GET**     | `/tasks`         | Retrieve all tasks                               | None                                         | List of all tasks                             |
+| **POST**    | `/tasks`         | Create a new task                                | `name=Buy groceries` (x-www-form-urlencoded) | Returns the created task                      |
+| **GET**     | `/tasks/:taskId` | Retrieve a single task by ID                     | None                                         | Returns the task with the specified ID        |
+| **PUT**     | `/tasks/:taskId` | Update a specific task (e.g., mark as completed) | `{ "status": ["completed"] }`                | Returns the updated task                      |
+| **DELETE**  | `/tasks/:taskId` | Delete a task by ID                              | None                                         | `{ "message": "Task Successfully deleted!" }` |
+
+---
+## Author
+
+### Michael Kazembe
+
+Software Developer | Node.js | MongoDB | React
+
+📧 Email: michaelkazembe@gmail.com
+
+🌐 GitHub: github.com/MichaelKazembe
+
+💼 LinkedIn: linkedin.com/in/Michael-Kazembe
