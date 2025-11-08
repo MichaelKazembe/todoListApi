@@ -21,8 +21,8 @@ app.use(bodyParser.json());
 // MongoDB Connection
 mongoose
   .connect(URL)
-  .then(() => console.log("✅ Connected to MongoDB"))
-  .catch((err) => console.error("❌ MongoDB connection error:", err));
+  .then(() => console.log("Connected to MongoDB"))
+  .catch((err) => console.error(" MongoDB connection error:", err));
 
 // Register Routes
 routes(app);
@@ -39,5 +39,5 @@ app.use(function (req, res) {
 
 // Start Server
 app.listen(port, () => {
-  console.log(`🚀 TodoList RESTful API server started on: ${port}`);
+  console.log(` TodoList RESTful API server started on: ${port}`);
 });
